@@ -18,17 +18,47 @@
     <main>
         <div id="container">
             <p>TOP TEXT</p>
-            <picture>
+            <div class="container-img">
                 <img>
-            </picture>
+            </div>
             <p>BOTTON TEXT</p>
-            <button id="descargar">Descargar Meme</button>
+            
         </div>
+        
+        <div class="button-descargar">
+            <button id="descargar">Descargar Meme</button>
+
+        </div>
+
         <aside>
-            <button id="cerrar">cerrar</button>
-            <h2>IMAGEN</h2>
+            <button id="aside-boton-cerrar">cerrar</button>
+            <section id="aside-imagen">
+                <h2>Imagen</h2>
+                <div class="aside-imagen-url">
+                    <p>url</p>
+                    <input type="text">
+                </div>
+                <div class="aside-imagen-fondo">
+                    <h2>fondo</h2>
+                    <input aria-label="color" type="color" value="#FFFFFF">
+                    <select id="efecto" id="efecto">
+                        <option value="none">ninguno</option>
+                        <option value="lighten">aclarar</option>
+                        <option value="darken">oscurece</option>
+                        <option value="difference">diferente</option>
+                        <option value="luminosity">luminosidad</option>
+                        <option value="multiply">multiplicar</option>
+                                              
+                    
+                    </select>
+                    
+                </div>
+            </section>
     
         </aside>
+        
+        
+
     </main>
 </body>
 </html>

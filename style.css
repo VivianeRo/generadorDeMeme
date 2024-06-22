@@ -4,43 +4,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  
 }
 header {
     
     background-color:#191e2b;
     font-family: "Playwrite NG Modern", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 20px;
     
 }
-#headerBoton {
-    display: flex;
+h1 {
+    color: white;
+    font-size: 16px;
 }
+/*#headerBoton {
+    display: flex;
+}*/
 main {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     font-family: "Playwrite NG Modern", cursive;
     background-color: #30343f;
+    gap: 30px;
+    
 
 }
 #container {
     display: block;
     width: 350px;
     height: 350px;
+    background-color: white;
     border: 1px solid black;
     margin:auto;
     margin-top: 100px;
-}
-picture {
-    width: 350px;
-    height: 300px;
-    border: 1px solid red;
-}
-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    
 }
+.container-img {
+    width: 100%;
+    height: 250px;
+    border: 1px solid red;
+    background-color: #252935;
+}
+
+ img { 
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.button-descargar {
+    margin-bottom: 50px;
+}
+
+
+    
 aside {
     background-color: #252935;
     position: absolute;
@@ -48,10 +75,66 @@ aside {
     right: 0;
     z-index: 10;
     text-align: right;
-    height: 100vh;
+    height: 100%;
     width: 200px;
+    
+    
 }
-aside h2{
-    font-size: 1em;
+h2 {
+    
     text-align: center;
+    color: white;
+    padding-top: 30px;
 }
+
+p {
+    color: black;
+}
+#imagen {
+   margin-right: 10px; 
+}
+#texto {
+    margin-right: 10px;
+
+}
+#aside-boton-cerrar {
+    display: none;
+}
+#aside-imagen {
+    padding-block: 30px;
+}
+
+
+
+
+.aside-imagen-url {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    
+    }
+
+.aside-imagen-url p {
+    color: white;
+}
+.aside-imagen-url input {
+    background-color: #30343f;
+    height: 20px;
+    border: none;
+}
+
+.color {
+    background-color: beige;
+}
+.aside-imagen-fondo {
+    display: flex;
+}
+select {
+    height: 30px;
+}
+
+
+
+

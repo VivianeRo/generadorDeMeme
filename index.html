@@ -19,7 +19,7 @@
         <div id="container">
             <p>TOP TEXT</p>
             <div class="container-img">
-                <img>
+                <img src="" alt="" id="container-img">
             </div>
             <p>BOTTON TEXT</p>
             
@@ -40,20 +40,116 @@
                 </div>
                 <div class="aside-imagen-fondo">
                     <h2>fondo</h2>
-                    <input aria-label="color" type="color" value="#FFFFFF">
-                    <select id="efecto" id="efecto">
-                        <option value="none">ninguno</option>
-                        <option value="lighten">aclarar</option>
-                        <option value="darken">oscurece</option>
-                        <option value="difference">diferente</option>
-                        <option value="luminosity">luminosidad</option>
-                        <option value="multiply">multiplicar</option>
-                                              
-                    
-                    </select>
-                    
+                    <div class="aside-imagen-fondo-input">
+                        <div class="eleccionDeColor">
+                          <input type="color" value="#FFFFFF" class="color">
+                          <span>#FFFFFF</span>
+                        </div>
+                        <select id="efecto" id="efecto">
+                         <option value="none">ninguno</option>
+                         <option value="lighten">aclarar</option>
+                         <option value="darken">oscurece</option>
+                         <option value="difference">diferente</option>
+                         <option value="luminosity">luminosidad</option>
+                         <option value="multiply">multiplicar</option>
+                        </select>
+                    </div>    
                 </div>
-            </section>
+                <div class="aside-imagen-filtros">
+                    <h2>
+                        filtros
+                    </h2>
+                    <div class="aside-imagen-filtros-brillo">
+                        <label for="brillo">Brillo</label>
+                        <input type="range" 
+                        id="brillo" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-opacidad">
+                        <label for="opacidad">Opacidad</label>
+                        <input type="range" 
+                        id="opacidad" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-contraste">
+                        <label for="contraste">Contraste</label>
+                        <input type="range" 
+                        id="contraste" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+
+                    </div>
+                    <div class="aside-imagen-filtros-desenfoque">
+                        <label for="desefonque">Desenfoque</label>
+                        <input type="range" 
+                        id="desefonque" 
+                        step="0.1"
+                        min="0"
+                        max="1">
+                    </div>
+                    <div class="aside-imagen-filtros-escalaDeGrises">
+                        <label for="escalaDeGrises">Escala de grises</label>
+                        <input type="range" 
+                        id="escalaDeGrises" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-sepia">
+                        <label for="sepia">Sepia</label>
+                        <input type="range" 
+                        id="sepia" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-hue">
+                        <label for="hue">HUE</label>
+                        <input type="range" 
+                        id="hue" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-saturado">
+                        <label for="saturado">Saturado</label>
+                        <input type="range" 
+                        id="saturado" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    <div class="aside-imagen-filtros-negativo">
+                        <label for="negativo">Negativo</label>
+                        <input type="range" 
+                        id="negativo" 
+                        step="0.1"
+                        min="0"
+                        max="1"
+
+                        >
+                    </div>
+                    
+                </div></section>
     
         </aside>
         

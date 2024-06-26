@@ -91,6 +91,7 @@ h2 {
     text-align: center;
     color: white;
     padding-top: 30px;
+    font-size: 16px;
 }
 
 p {
@@ -106,8 +107,11 @@ p {
 #aside-boton-cerrar {
     display: none;
 }
+/*seccion aside imagen*/
 #aside-imagen {
     padding-block: 30px;
+    display: none;
+    
 }
 .aside-imagen-url {
     display: flex;
@@ -198,7 +202,50 @@ label {
     flex-direction: column;
 }
 
+   /*appearence ::view-transition-newpara la bolita  la propiedad es accent-coloraaa.red*/ 
+
+#aside-texto {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 30px;
+    gap: 10px;
+    font-size: 16px;
+}
+aside-texto h2 {
+    font-size: 16px;
+}
+
+.text-top {
+    width: 80%;
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox {
+    padding-left: 10px;
+}
+.text-botton {
+    width: 80%;
+    text-align: left;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#text-efecto {
+    margin-left: 10px;
     
-
-
+}
+.input-number {
+    margin-left: 10px;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    
+}
+.input-number input {
+    width: 50%;
+}
 

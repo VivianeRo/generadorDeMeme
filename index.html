@@ -26,13 +26,15 @@
         </div>
         
         <div class="button-descargar">
-            <button id="descargar">Descargar Meme</button>
+            <button id="descargar"> <img src="imagen/icons8-download-24.png">
+                Descargar Meme</button>
 
         </div>
 
         <aside>
             <!--Seccion de imagen-->
-            <button id="aside-boton-cerrar">cerrar</button>
+            <button id="aside-boton-cerrar">
+            </button>
             <section id="aside-imagen">
                 <h2>Imagen</h2>
                 <div class="aside-imagen-url">
@@ -40,7 +42,7 @@
                     <input type="text">
                 </div>
                 <div class="aside-imagen-fondo">
-                    <h2>fondo</h2>
+                    <h2>Fondo</h2>
                     <div class="aside-imagen-fondo-input">
                         <div class="eleccionDeColor">
                           <input type="color" value="#FFFFFF" class="color">
@@ -58,7 +60,7 @@
                 </div>
                 <div class="aside-imagen-filtros">
                     <h2>
-                        filtros
+                        Filtros
                     </h2>
                     <div class="aside-imagen-filtros-brillo">
                         <label for="brillo">Brillo</label>
@@ -156,7 +158,7 @@
             
                 <!--SECCION DE TEXTO-->
             <section id="aside-texto">
-                <h2>Texto</h2>
+                <h2>TEXTO</h2>
                 <div class="text-top">
                     <label for="top-text">Superior</label>
                     <input type="text" name="top-text" id="top-text" placeholder="TOP TEXT">
@@ -166,7 +168,7 @@
                      <label >sin texto superior</label>
                 </div>
                 <div class="text-botton">
-                    <label for="botton-text">Superior</label>
+                    <label for="botton-text">Inferior</label>
                     <input type="text" name="botton-text" id="botton-text" placeholder="BOTTON TEXT">
                 </div>
                 <div class="checkbox">
@@ -187,13 +189,47 @@
                    </select>
                 <div class="input-number">
                     <input type="number"  min="12" value="40">
-                    <button>p</button>
-                    <button>p</button>
-                    <button>p</button>
-
-
+                    <button><img src="imagen/icons8-justificar-16.png"></button>
+                    <button><img src="imagen/icons8-alinear-a-la-derecha-16.png"></button>
+                    <button><img src="imagen/icons8-alinear-a-la-izquierda-16.png"></button>
                 </div>
+                <div class="text-color-fondo">
+                    <label for="text-color-color">Color</label>
+                    <input type="color" name="text-color-color">
+                    <span>#00000</span>
+                </div>
+                <div class="text-color-fondo">
+                    <label for="text-fondo-fondo">Fondo</label>
+                    <input type="color" name="text-fondo-fondo">
+                    <span>#FFFFFF</span>
+                </div>
+                <h2>Contorno</h2>
+
+                <div class="contorno">
+                    
+                    <button>ninguno</button>
+                    <button>claro</button>
+                    <button>oscuro</button>
+                </div>
+                <h2>Espaciado</h2>
+                <input type="number" class="espaciado" min="10" value="40">
+                <h2>Intelineado</h2>
+                <select class="intelineado">
+                <option value="0.8">0.8</option>
+                 <option value="1">0.8</option>
+                 <option value="1.2">1.2</option>
+                 <option value="1.5">1.5</option>
+                 <option value="2">2</option>
+                 <option value="2.5">2.5</option>
+ 
+                </select>
+
+
+                
+               
+                
             
+                
               
             </section>
         </aside>

@@ -36,9 +36,13 @@ main {
     font-family: "Playwrite NG Modern", cursive;
     background-color: #30343f;
     gap: 30px;
-    
-
 }
+#descargar {
+    background-color:#2e7d32;
+    border: none;
+    padding: 10px;
+}
+
 #container {
     display: block;
     width: 350px;
@@ -56,25 +60,22 @@ main {
 .container-img {
     width: 100%;
     height: 250px;
-    border: 1px solid red;
     background-color: #252935;
 }
 
- /*img { 
-    width: 100%;
+.container-img img { 
+    
     height: 250px;
     object-fit: contain;
-}*/
+}
 .button-descargar {
     margin-bottom: 50px;
+    
 }
 button img {
     width: 16px;
     height: 16px;
-}
-
-
-    
+} 
 aside {
     background-color: #252935;
     position: absolute;
@@ -82,9 +83,7 @@ aside {
     right: 0;
     z-index: 10;
     text-align: right;
-    
-    
-    
+    padding-left: 10px;   
 }
 h2 {
     
@@ -99,18 +98,39 @@ p {
 }
 #imagen {
    margin-right: 10px; 
+   
 }
 #texto {
     margin-right: 10px;
 
 }
 #aside-boton-cerrar {
-    display: none;
+    background-color: #191e2b;
+    color: white;
+    border: none;
+    margin: 20px;
+    font-size: 16px;
+    position: relative;
+}
+#aside-boton-cerrar::after {
+    content: 'x';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    border: 1px solid grey;
+    padding: 3px;
+    margin-top: 10px;
 }
 /*seccion aside imagen*/
 #aside-imagen {
     padding-block: 30px;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
     
 }
 .aside-imagen-url {
@@ -119,6 +139,7 @@ p {
     align-items: flex-start;
     width: 80%;
     margin: auto;
+    gap: 10px;
     
     }
 
@@ -174,6 +195,8 @@ select {
     text-align: center;
     margin: 0 auto;
     text-align: left;
+    accent-color:#5a5d68;
+    gap: 20px;
 }
 .aside-imagen-filtros-brillo {
     
@@ -202,25 +225,42 @@ label {
     flex-direction: column;
 }
 
-   /*appearence ::view-transition-newpara la bolita  la propiedad es accent-coloraaa.red*/ 
+   /*seccion texto aside*/ 
 
 #aside-texto {
-    display: flex;
+    display: none;
     color: white;
     flex-direction: column;
     align-items: flex-start;
     padding-block: 30px;
     gap: 10px;
     font-size: 16px;
+    width: 200px;
 }
+#top-text {
+    background-color: #30343f;
+    border: none;
+    height: 20px;
+    color: white;
+}
+#botton-text {
+    background-color: #30343f;
+    border: none;
+    height: 20px;
+    color: white;
+}
+
 aside-texto h2 {
     font-size: 16px;
+}
+.text-color-fondo {
+    color: white;
+    display: flex;
 }
 
 .text-top {
     width: 80%;
     text-align: left;
-    padding-left: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -230,12 +270,11 @@ aside-texto h2 {
 .text-botton {
     width: 80%;
     text-align: left;
-    padding-left: 10px;
     display: flex;
     flex-direction: column;
 }
 #text-efecto {
-    margin-left: 10px;
+    margin-top: 10px;
     
 }
 .input-number {
@@ -243,9 +282,53 @@ aside-texto h2 {
     width: 80%;
     display: flex;
     gap: 20px;
+    padding-block: 30px;
     
 }
 .input-number input {
     width: 50%;
+    background-color: #30343f;
+    color: white;
+    border: none;
+    height: 20px;
+}
+.input-number img {
+       width: 16px;
+       height: 16px;
+}
+.text-color-fondo {
+    display: flex;
+    gap: 10px;
+    padding-block: 30px;
+}
+.text-color-fondo {
+    
+    display: flex;
+    margin-left: 10px;
+    gap: 30px;
+}
+.text-color-fondo span {
+    text-align: end;
+    padding-top: 10px;
+}
+.contorno {
+    display: flex;
+    gap: 10px;
+}
+.contorno button {
+    padding: 10px;
+    background-color: #30343f;
+    color: white;
+    border: none;
+}
+.espaciado {
+    background-color: #30343f;
+    color: white;
+    border: none;
+    width: 80%;
+    height: 20px;
+}
+.intelineado {
+    width: 80%;
 }
 

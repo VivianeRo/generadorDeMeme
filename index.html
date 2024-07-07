@@ -21,14 +21,14 @@
             <button id="imagen"><img src="imagen/icons8-imagen-16.png">Imagen</button>
             <button id="texto"><img src="imagen/icons8-a-50.png">Texto</button>
             <button id="modoOscuro" class="modoOscuro"><img src="imagen/icons8-dentro-de-una-48.png">Modo Oscuro</button>
-            <button id="modoClaro">modo claro</button>
+            <button id="modoClaro" class="modoOscuro"><img src="imagen/icons8-dentro-de-una-48.png">Modo Claro</button>
         </div>
     </header>
     <main>
         <div id="container">
             <p>TOP TEXT</p>
             <div id="container-img">
-                <img src="https://4.bp.blogspot.com/-s5nlQK14mDc/UtL0TEeJ9RI/AAAAAAAAY2U/LYDmcixgR1M/s1600/187959.jpg" alt="foto" id="imagen">
+                <img src="https://4.bp.blogspot.com/-s5nlQK14mDc/UtL0TEeJ9RI/AAAAAAAAY2U/LYDmcixgR1M/s1600/187959.jpg" alt="foto" id="imagenFoto">
             </div>
             <p>BOTTON TEXT</p>
             
@@ -47,15 +47,16 @@
             <section id="aside-imagen">
                 <h2>Imagen</h2>
                 <div class="aside-imagen-url">
-                    <p>url</p>
-                    <input type="text">
+                    <label for="elegirImagen">url</label>
+                    <input type="text" id="url" name="text"  id="elegirImagen"/>
                 </div>
                 <div class="aside-imagen-fondo">
                     <h2>Fondo</h2>
                     <div class="aside-imagen-fondo-input">
                         <div class="eleccionDeColor">
-                          <input type="color" value="#FFFFFF" class="color">
-                          <span>#FFFFFF</span>
+                          <input type="color" value="#FFFFFF" class="color" id="fondo-color">
+                          <label for="fondo-color">#FFFFFF</label>
+                          
                         </div>
                         <select id="efecto" id="efecto">
                          <option value="none">ninguno</option>
@@ -90,6 +91,7 @@
                         step="0.1"
                         min="0"
                         max="1"
+                        value="0"
 
                         >
                     </div>
@@ -97,9 +99,10 @@
                         <label for="contraste">Contraste</label>
                         <input type="range" 
                         id="contraste" 
-                        step="0.1"
-                        min="0"
-                        max="1"
+                        step="1%"
+                        min="100%"
+                        max="1000%"
+                        value="0"
 
                         >
 
@@ -109,16 +112,19 @@
                         <input type="range" 
                         id="desefonque" 
                         step="0.1"
-                        min="0"
-                        max="1">
+                        min="0px"
+                        max="10px"
+                        value="0">
+                        
                     </div>
                     <div class="aside-imagen-filtros-escalaDeGrises">
                         <label for="escalaDeGrises">Escala de grises</label>
                         <input type="range" 
                         id="escalaDeGrises" 
-                        step="0.1"
-                        min="0"
-                        max="1"
+                        step="1%"
+                        min="0%"
+                        max="100%"
+                        value="0"
 
                         >
                     </div>
@@ -126,19 +132,21 @@
                         <label for="sepia">Sepia</label>
                         <input type="range" 
                         id="sepia" 
-                        step="0.1"
-                        min="0"
-                        max="1"
+                        step="1%"
+                        min="0%"
+                        max="100%"
+                        value="0"
 
                         >
                     </div>
                     <div class="aside-imagen-filtros-hue">
-                        <label for="hue">HUE</label>
+                        <label for="hue">Hue</label>
                         <input type="range" 
                         id="hue" 
-                        step="0.1"
-                        min="0"
-                        max="1"
+                        step="1deg"
+                        min="0deg"
+                        max="359deg"
+                        value="0"
 
                         >
                     </div>
@@ -146,9 +154,10 @@
                         <label for="saturado">Saturado</label>
                         <input type="range" 
                         id="saturado" 
-                        step="0.1"
-                        min="0"
-                        max="1"
+                        step="10%"
+                        min="100%"
+                        max="1000%"
+                        value="0"
 
                         >
                     </div>
@@ -163,8 +172,10 @@
 
                         >
                     </div>
-                    
-                </div></section>
+                    <button id="restaurar" class="restaurar">Restaurar filtros</button>
+                </div>
+                
+            </section>
 
             
             

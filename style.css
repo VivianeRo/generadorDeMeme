@@ -62,12 +62,14 @@ main {
     height: 250px;
     background-color: #252935;
     filter: none;
+    background-blend-mode: none;
 }
 
 #container-img img { 
     
     height: 100%;
     width: 100%;
+    
 }
 .button-descargar {
     margin-bottom: 50px;
@@ -92,6 +94,7 @@ h2 {
     color: white;
     padding-top: 30px;
     font-size: 16px;
+    text-align: left;
 }
 
 p {
@@ -139,8 +142,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 80%;
-    margin: auto;
     gap: 10px;
     
     }
@@ -152,6 +153,7 @@ p {
     background-color: #30343f;
     height: 20px;
     border: none;
+    color: white;
 }
 
 .color {
@@ -161,6 +163,7 @@ p {
     width: 20px;
     height: 20px;
 }
+
 .aside-imagen-fondo {
     display: flex;
     flex-direction: column;
@@ -176,10 +179,11 @@ select {
 .eleccionDeColor {
     background-color: #30343f;
     color: white;
-    width: 100px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 9px;
 }
 span {
     font-size: 10px;
@@ -188,6 +192,7 @@ select {
     background-color: #30343f;
     color: white;
     border: none;
+    background-blend-mode: luminosity;
 }
 .aside-imagen-filtros {
     display: flex;
@@ -211,6 +216,22 @@ select {
 .aside-imagen-filtros-opacidad {
     display: flex;
     flex-direction: column;
+    filter: opacity(1);
+}
+.aside-imagen-filtros-contraste{
+    display: flex;
+    flex-direction: column;
+    filter: contrast(100%);
+}
+.aside-imagen-filtros-desenfoque {
+    display: flex;
+    flex-direction: column;
+    filter: blur(0px);
+}
+.aside-imagen-filtros-escalaDeGrises{
+    display: flex;
+    flex-direction: column;
+    filter:grayscale(0%) ;
 }
 label {
     color: white;
@@ -218,11 +239,20 @@ label {
 .aside-imagen-filtros-sepia {
     display: flex;
     flex-direction: column;
+    filter: sepia(0%);
 }
 .aside-imagen-filtros-hue {
     display: flex;
     flex-direction: column;
+    filter: hue-rotate(0deg);
 }
+.aside-imagen-filtros-saturado{
+    display: flex;
+    flex-direction: column;
+    filter: saturate(100%);
+
+}
+
 .aside-imagen-filtros-negativo {
 
     display: flex;
@@ -270,6 +300,7 @@ aside-texto h2 {
 }
 .checkbox {
     padding-left: 10px;
+    text-align: left;
 }
 .text-botton {
     width: 80%;
@@ -279,6 +310,7 @@ aside-texto h2 {
 }
 #text-efecto {
     margin-top: 10px;
+    display: flex;
     
 }
 .input-number {
@@ -308,8 +340,7 @@ aside-texto h2 {
 .text-color-fondo {
     
     display: flex;
-    margin-left: 10px;
-    gap: 30px;
+    
 }
 .text-color-fondo span {
     text-align: end;
@@ -329,12 +360,21 @@ aside-texto h2 {
     background-color: #30343f;
     color: white;
     border: none;
-    width: 80%;
     height: 20px;
+    display: flex;
+
 }
 .intelineado {
     width: 80%;
+    display: flex;
 }
 .ocultar {
     display: none;
+}
+.restaurar{
+    margin: auto;
+    background-color: #30343f;
+    padding: 6px;
+    color: white;
+    border: none;
 }

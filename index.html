@@ -26,11 +26,11 @@
     </header>
     <main>
         <div id="container">
-            <p>TOP TEXT</p>
+            <p id="text_superior">TOP TEXT</p>
             <div id="container-img">
                 <img src="https://4.bp.blogspot.com/-s5nlQK14mDc/UtL0TEeJ9RI/AAAAAAAAY2U/LYDmcixgR1M/s1600/187959.jpg" alt="foto" id="imagenFoto">
             </div>
-            <p>BOTTON TEXT</p>
+            <p id="text_inferior">BOTTON TEXT</p>
             
         </div>
         
@@ -48,7 +48,7 @@
                 <h2>Imagen</h2>
                 <div class="aside-imagen-url">
                     <label for="elegirImagen">url</label>
-                    <input type="text" id="url" name="text"  id="elegirImagen"/>
+                    <input type="text"  name="elegirImagen"  id="elegirImagen"/>
                 </div>
                 <div class="aside-imagen-fondo">
                     <h2>Fondo</h2>
@@ -184,7 +184,7 @@
                 <h2>TEXTO</h2>
                 <div class="text-top">
                     <label for="top-text">Superior</label>
-                    <input type="text" name="top-text" id="top-text" placeholder="TOP TEXT">
+                    <input type="text" name="top-text" id="top-text" placeholder="TOP TEXT" >
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox">
@@ -211,28 +211,28 @@
                     <option value="Times New Roman">Time New Roman</option>
                    </select>
                 <div class="input-number">
-                    <input type="number"  min="12" value="40">
-                    <button><img src="imagen/icons8-justificar-16.png"></button>
-                    <button><img src="imagen/icons8-alinear-a-la-derecha-16.png"></button>
-                    <button><img src="imagen/icons8-alinear-a-la-izquierda-16.png"></button>
+                    <input type="number"  min="12" value="40" id="input-number">
+                    <button id="textoCentro"><img src="imagen/icons8-justificar-16.png"></button>
+                    <button id="textoDerecha"><img src="imagen/icons8-alinear-a-la-derecha-16.png"></button>
+                    <button id="textoIzquierda"><img src="imagen/icons8-alinear-a-la-izquierda-16.png"></button>
                 </div>
                 <div class="text-color-fondo">
                     <label for="text-color-color">Color</label>
-                    <input type="color" name="text-color-color">
+                    <input type="color" name="text-color-color" id="text-color-color">
                     <span>#00000</span>
                 </div>
                 <div class="text-color-fondo">
                     <label for="text-fondo-fondo">Fondo</label>
-                    <input type="color" name="text-fondo-fondo">
+                    <input type="color" name="text-fondo-fondo" id="text-fondo-fondo">
                     <span>#FFFFFF</span>
                 </div>
                 <h2>Contorno</h2>
 
                 <div class="contorno">
                     
-                    <button>ninguno</button>
-                    <button>claro</button>
-                    <button>oscuro</button>
+                    <button id="contornoNinguno">ninguno</button>
+                    <button id="contornoClaro">claro</button>
+                    <button id="contornoOscuro">oscuro</button>
                 </div>
                 <h2>Espaciado</h2>
                 <input type="number" class="espaciado" min="10" value="40">

@@ -97,15 +97,16 @@ botonImagen.addEventListener("click" , function(){
     seccionImagen.style.display ="block"
 })
 /*color de fondo */
+imagenFoto = document.getElementById("imagenFoto")
 const fondo_color= document.getElementById("fondo-color")
 fondo_color.addEventListener("input" ,function(e){
     console.log(e.target.value)
     const fondo_color_value = e.target.value
-    container.style.backgroundColor = fondo_color_value})
+    imagenFoto.style.backgroundColor = "#000000"})
 
 
 /*efecto de imagen */
-const imagenFoto = document.getElementById("imagenFoto")
+
 const efecto = document.getElementById("efecto");
 efecto.addEventListener("input", function(e){
     console.log(e.target.value)
@@ -118,19 +119,148 @@ efecto.addEventListener("input", function(e){
 const restaurar = document.getElementById("restaurar");
 restaurar.addEventListener("click", function(e){
     console.log("boton funcionando" ,restaurar);
-    imagen.style.filter ="none"
+    imagen.style.filter="none"
+    container.style.backgroundColor= "white"
+
 })
-console.log(imagenFoto.src)
+
 /* Ingresando la url */
- const cambiar = function(){
+const elegirImagen = document.getElementById("elegirImagen");
+console.log(elegirImagen)
+ /*const cambiar = function(){
     imagenFoto.src= input.value
     console.log(cambiar)
-}
+}*/
 
 
-const elegirImagen = document.getElementById("elegirImagen");
-elegirImagen.addEventListener("input",cambiar);
+elegirImagen.addEventListener("click",function(){
+    imagenFoto.src = elegirImagen.value
+
+    console.log(elegirImagen)
+});
+
+
+
+/*elegirImagen.addEventListener("change", function() {
+    imagenFoto.setAttribute("src", elegirImagen.value);
+    imagenFoto.setAttribute("alt", "image.png");}
+);*/
 console.log(elegirImagen)
+/*ASIDE TEXTO*/
+/*Texto superior */
+const top_text = document.getElementById("top-text")
+console.log(top_text)
+const text_superior =document.getElementById("text_superior")
+console.log(text_superior)
+const text_inferior = document.getElementById("text_inferior")
+console.log(text_inferior)
+
+ 
+ 
+
+top_text.addEventListener('input',function(){
+    text_superior.innerText= top_text.value
+    console.log(top_text)
+})
+/*text inferior */
+const botton_text = document.getElementById("botton-text")
+botton_text.addEventListener("input", function(){
+    text_inferior.innerHTML= botton_text.value
+    console.log(botton_text)
+})
+/*efecto del texto fontFamily */
+const text_efecto = document.getElementById("text-efecto");
+text_efecto.addEventListener("input" ,function(e){
+    text_superior.style.fontFamily = e.target.value;
+    console.log(text_efecto);
+})
+text_efecto.addEventListener("input",function(e){
+    text_inferior.style.fontFamily = e.target.value;
+    console.log(text_efecto);
+})
+/*tamaño de letra */
+ const input_number = document.getElementById("input-number");
+ input_number.addEventListener("input", function(e){
+    let fontSize = this.value;
+    text_superior.style.fontSize = fontSize + "px";
+    text_inferior.style.fontSize = fontSize + 'px'
+    
+
+    
+
+ })
+ /*direcciones de texto*/
+
+ const textoCentro = document.getElementById("textoCentro");
+ const textoDerecha = document.getElementById("textoDerecha");
+ const textoIzquierda = document.getElementById("textoIzquierda");
+
+ textoCentro.addEventListener("click", function(e){
+    container.style.textAlign = "center"
+    console.log("funcionando")
+ })
+ textoDerecha.addEventListener("click", function(e){
+    container.style.alignItems = "right"
+    console.log("funcionando")
+ })
+ textoIzquierda.addEventListener("click", function(e){
+    container.style.alignItems = "left"
+
+    console.log("funcionando")
+ }) 
+ /*color de la letra */
+ const text_color_color = document.getElementById("text-color-color")
+ const text_fondo_fondo = document.getElementById("text-fondo-fondo")
+
+ text_color_color.addEventListener("input", function(e){
+    text_superior.textContent = top_text.value
+    text_superior.style.color = text_color_color.value;
+    text_inferior.textContent = top_text.value
+    text_inferior.style.color = text_color_color.value;
+    
+    
+    console.log("FUNCIONANDO")
+ })
+ /*color de fondo */
+ text_fondo_fondo.addEventListener("input", function(e){
+    container.style.backgroundColor = text_fondo_fondo.value;
+
+    console.log("FUNCIONANDO", text_fondo_fondo)
+ })
+ /*contorno de la letra */
+
+ const contornoNinguno = document.getElementById("contornoNinguno");
+ const contornoClaro = document.getElementById("contornoClaro");
+ const contornoOscuro = document.getElementById("contornoOscuro");
+
+ contornoOscuro.addEventListener("click", function(e){
+    text_superior.classList.add("contornooscuro")
+    text_superior.classList.remove("contornoclaro")
+    text_inferior.classList.add("contornooscuro")
+    text_inferior.classList.remove("contornoclaro")
+    console.log('funcionandoS',contornoOscuro)
+
+
+ })
+ contornoClaro.addEventListener("click", function(e){
+    text_superior.classList.add("contornoclaro")
+    text_superior.classList.remove("contornooscuro")
+    text_inferior.classList.add("contornoclaro")
+    text_inferior.classList.remove("contornooscuro")
+    console.log('funcionandoS',contornoClaro)
+ })
+ contornoNinguno.addEventListener("click", function(e){
+    text_superior.classList.add("contornoninguno")
+    text_inferior.classList.add("contornoninguno")
+    
+    console.log('funcionandoS',contornoNinguno)
+ })
+
+
+    
+    
+    
+
     
 
 

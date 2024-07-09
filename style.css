@@ -67,8 +67,11 @@ main {
 
 #container-img img { 
     
-    height: 100%;
-    width: 100%;
+
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    
     
 }
 .button-descargar {
@@ -99,6 +102,7 @@ h2 {
 
 p {
     color: black;
+    font-size: 16px;
 }
 #imagen {
    margin-right: 10px; 
@@ -377,4 +381,14 @@ aside-texto h2 {
     padding: 6px;
     color: white;
     border: none;
+}
+.contornoclaro {
+    text-shadow: 2px 2px 2px white, -2px -2px 2px white;
+}
+.contornooscuro {
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black;
+    
+}
+.corntornoninguno {
+    text-shadow: none;
 }

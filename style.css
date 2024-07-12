@@ -7,32 +7,30 @@
   
 }
 :root {
-    --aside:#30343f
-    --letra:#ffffff
-    --header:#191e2b
-    --container-img:#252935
-    --border-negro:#000000
-    --header-c:#e0e0e0
-    --main-c:#eeeeee
-    --aside-c:#fafafa
-    --letra-c:#000000
+    --aside:#30343f;
+    --letra:#ffffff;
+    --header:#191e2b;
+    --container-img:#252935;
+    --border-negro:#000000;
+
     
 }
-.bottonClaro {
-    --header-c-1:#e0e0e0
-    --main-c-2:#eeeeee
-    --aside-c-3:#fafafa
-    --letra-c-4:#000000
+.bottonClaro{
+
+    --aside-1:#fafafa;
+    --letra-2:#000000;
+    --header-3:#e0e0e0;
 }
 .bottonOscuro{
-    --aside-1:#30343f
-    --letra-2:#ffffff
-    --header-3:#191e2b
-    --container-img-4:#252935
-    
+    --aside-1:#30343f;
+    --letra-2:#ffffff;
+    --header-3:#191e2b;   
 }
 body {
     background-color:var(--aside-1);
+}
+.hidden{
+    display: none;
 }
 header {
     

@@ -286,15 +286,24 @@ efecto.addEventListener("input", function(e){
 const headerBoton =document.getElementById("headerBonton")
 const modoOscuro = document.getElementById("modoOscuro");
 const modoClaro = document.getElementById("modoClaro");
+const body =document.getElementById("body")
 
-modoClaro.addEventListener("click", function(e){
-    modoClaro.classList.add("bottonOcuro")
-    modoClaro.classList.remove("bottonClaro")
-}
-)
-modoClaro.addEventListener("click", function(e){
-headerBoton.style.backgroundColor = "white"
-})
+
+modoClaro.addEventListener("click",function(e){
+    body.classList.add("buttonClaro");
+    body.classList.remove("buttonOscuro");
+    modoClaro.classList.add("hidden")
+    modoOscuro.classList.remove("hidden")
+});
+console.log(modoClaro)
+
+modoOscuro.addEventListener("click",function(){
+    body.classList.add("buttonOscuro");
+    body.classList.remove("buttonClaro");
+    modoClaro.classList.add("hidden")
+    modoOscuro.classList.remove("hidden")
+});
+console.log(modoOscuro)
 
 /*
 const checkSup = document.getElementById("check_sup_txt");

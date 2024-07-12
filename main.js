@@ -202,7 +202,7 @@ text_efecto.addEventListener("input",function(e){
     console.log("funcionando", textoCentro)
  })
  textoDerecha.addEventListener("click", function(e){
-    container.style.alignItems = "right"
+    text_superior.style.alignItems = "right"
     
     console.log("funcionando",textoDerecha)
  })
@@ -304,7 +304,19 @@ modoOscuro.addEventListener("click",function(){
     modoOscuro.classList.remove("hidden")
 });
 console.log(modoOscuro)
+ /*checkbox */
 
+
+ const checkbox = document.getElementById("checkbox")
+ checkbox.addEventListener("click",function(e){
+    text_superior.classList.toggle("hidden")
+
+ })
+ const checkbox1 = document.getElementById("checkbox1")
+ checkbox1.addEventListener("click",function(e){
+    text_inferior.classList.toggle("hidden")
+
+ })
 /*
 const checkSup = document.getElementById("check_sup_txt");
 checkSup.addEventListener("click", function() {

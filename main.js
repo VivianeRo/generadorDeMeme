@@ -102,10 +102,10 @@ const fondo_color= document.getElementById("fondo-color")
 fondo_color.addEventListener("input" ,function(e){
     console.log(e.target.value)
     const fondo_color_value = e.target.value
-    imagenFoto.style.backgroundColor = "#000000"})
+    imagenFoto.style.backgroundColor = `${fondo_color_value}`})
 
 
-/*efecto de imagen */
+/*efecto de imagen 
 
 const efecto = document.getElementById("efecto");
 efecto.addEventListener("input", function(e){
@@ -113,7 +113,7 @@ efecto.addEventListener("input", function(e){
     const efecto_value = e.target.value
     imagen.style.backgroundBlendMode = efecto_value
 
-})
+})*/
 /*Boton restaura */
 
 const restaurar = document.getElementById("restaurar");
@@ -134,9 +134,11 @@ console.log(elegirImagen)
 
 
 elegirImagen.addEventListener("click",function(){
-    imagenFoto.src = elegirImagen.value
+     const elegirImagen1 = this.value
 
-    console.log(elegirImagen)
+     imagenFoto.src = elegirImagen1
+
+    console.log(elegirImagen1)
 });
 
 
@@ -197,16 +199,17 @@ text_efecto.addEventListener("input",function(e){
 
  textoCentro.addEventListener("click", function(e){
     container.style.textAlign = "center"
-    console.log("funcionando")
+    console.log("funcionando", textoCentro)
  })
  textoDerecha.addEventListener("click", function(e){
     container.style.alignItems = "right"
-    console.log("funcionando")
+    
+    console.log("funcionando",textoDerecha)
  })
  textoIzquierda.addEventListener("click", function(e){
     container.style.alignItems = "left"
 
-    console.log("funcionando")
+    console.log("funcionando" ,textoIzquierda)
  }) 
  /*color de la letra */
  const text_color_color = document.getElementById("text-color-color")
@@ -219,7 +222,7 @@ text_efecto.addEventListener("input",function(e){
     text_inferior.style.color = text_color_color.value;
     
     
-    console.log("FUNCIONANDO")
+    console.log("FUNCIONANDO" ,text_color_color)
  })
  /*color de fondo */
  text_fondo_fondo.addEventListener("input", function(e){
@@ -255,25 +258,51 @@ text_efecto.addEventListener("input",function(e){
     
     console.log('funcionandoS',contornoNinguno)
  })
+ /*espaciado*/
 
-
+const espaciado = document.getElementById("espaciado")
+espaciado.addEventListener("click", function(e){
+    const espaciado1 = espaciado.value
+    text_superior.style.padding = `${espaciado1}px`
+    text_inferior.style.padding = `${espaciado1}px`
+    console.log("funcionando" ,espaciado1)
+})
+/*interniado*/
+const intelineado = document.getElementById("intelineado")
+intelineado.addEventListener("click",function(e){
+    const intelineado1 =intelineado.value;
+    text_superior.style.lineHeight = intelineado1;
+    text_inferior.style.lineHeight= intelineado1;
+    console.log("funcionando", intelineado1)
+})
+const efecto = document.getElementById("efecto");
+efecto.addEventListener("input", function(e){
+    console.log(e.target.value)
+    const efecto_value = efecto.value;
+    imagenFoto.style.backgroundBlendMode = `${efecto_value}`})
     
-    
-    
 
-    
+/*boton modo oscuro */
+const headerBoton =document.getElementById("headerBonton")
+const modoOscuro = document.getElementById("modoOscuro");
+const modoClaro = document.getElementById("modoClaro");
 
+modoClaro.addEventListener("click", function(e){
+    modoClaro.classList.add("bottonOcuro")
+    modoClaro.classList.remove("bottonClaro")
+}
+)
+modoClaro.addEventListener("click", function(e){
+headerBoton.style.backgroundColor = "white"
+})
 
+/*
+const checkSup = document.getElementById("check_sup_txt");
+checkSup.addEventListener("click", function() {
+    supText.classList.toggle("hidden");
+});
 
- 
-    
-    
-
-
-
-
-/*boton modo oscuro 
-let modoOscuro = document.getElementById("modoOscuro");
-
-let modoClaro = document.getElementById("modoClaro");*/
-
+const checkInf = document.getElementById("check_inf_txt");
+checkInf.addEventListener("click", function() {
+    infText.classList.toggle("hidden");
+}); */

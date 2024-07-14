@@ -101,15 +101,14 @@ botonImagen.addEventListener("click" , function(){
 const elegirImagen = document.getElementById("elegirImagen");
 /*console.log(elegirImagen)*/
  
-function elegirImagen1(){
-    elegirImagen1 = this.value;
-    imagenFoto.src =elegirImagen1
 
-}
+elegirImagen.addEventListener("click",function(){
+    const elegirImagen1 = this.value
 
-elegirImagen.addEventListener("input",elegirImagen1)
-     
+    imagenFoto.src = elegirImagen1
 
+   console.log(elegirImagen1)
+});
 console.log(elegirImagen);
 /* PROBLEMA IMPORTANTE :sigo sin poner el color de fondo de la imagen y tampoco utilizar el fondo transparente  */
 
@@ -125,7 +124,7 @@ const label_fondo_color= document.getElementById("label-fondo-color")
 const fondo_color= document.getElementById("fondo-color")
 fondo_color.addEventListener("input" ,function(e){
     console.log(e.target.value)
-    fondo_color.style.backgroundImage = `${elegirImagen1}`})
+    fondo_color.style.backgroundImage =  "" })
 
 
     
@@ -136,15 +135,7 @@ fondo_color.addEventListener("input" ,function(e){
     elegirImagen.style.color = "white"*/
 
 
-/*efecto de imagen */
 
-const efecto = document.getElementById("efecto");
-efecto.addEventListener("input", function(e){
-    console.log(e.target.value)
-    
-    imagen.style.backgroundBlendMode = (`${elegirImagen1}`)
-
-})
 /*Boton restaura */
 
 const restaurar = document.getElementById("restaurar");
@@ -154,6 +145,13 @@ restaurar.addEventListener("click", function(e){
     container.style.backgroundColor= "white"
 
 })
+/*const restaurar = document.getElementById("restaurar");
+restaurar.addEventListener("click", function(e){
+    console.log("boton funcionando" ,restaurar);
+    imagen.style.filter="none"
+    container.style.backgroundColor= "white"
+
+}) */
 
 /*ASIDE TEXTO*/
 /*Texto superior */
@@ -283,11 +281,11 @@ intelineado.addEventListener("click",function(e){
     text_inferior.style.lineHeight= intelineado1;
     
 })
-/*const efecto = document.getElementById("efecto");
+const efecto = document.getElementById("efecto");
 efecto.addEventListener("input", function(e){
     console.log(e.target.value)
     const efecto_value = efecto.value;
-    imagenFoto.style.backgroundBlendMode = `${efecto_value}`})*/
+    imagenFoto.style.backgroundBlendMode = `${efecto_value}`})
     
 
 /*boton modo oscuro */

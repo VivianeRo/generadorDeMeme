@@ -107,7 +107,7 @@ elegirImagen.addEventListener("click",function(){
 
     imagenFoto.src = elegirImagen1
 
-   console.log(elegirImagen1)
+   console.log(elegirImagen)
 });
 console.log(elegirImagen);
 /* PROBLEMA IMPORTANTE :sigo sin poner el color de fondo de la imagen y tampoco utilizar el fondo transparente  */

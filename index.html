@@ -17,7 +17,7 @@
 <body id="body"  class="buttonOscuro" >
     <header>
         <h1>GENERADOR DE MEMES</h1>
-        <div id="headerBoton">
+        <div id="headerBoton" class="headerBoton">
             <button id="imagen"><img src="imagen/icons8-imagen-16.png" alt="Icono de foto">Imagen</button>
             <button id="texto"><img src="imagen/icons8-a-50.png" alt="Icono de una letra A">Texto</button>
             <button id="modoOscuro" class="hidden" ><img src="imagen/icons8-dentro-de-una-48.png" alt="Icono de una lampara">Modo Oscuro</button>
@@ -55,7 +55,7 @@
                     <div class="aside-imagen-fondo-input">
                         <div class="eleccionDeColor">
                           <input type="color" value="#FFFFFF" class="color" id="fondo-color">
-                          <label for="fondo-color">#FFFFFF</label>
+                          <label for="fondo-color" id="label-fondo-color">#FFFFFF</label>
                           
                         </div>
                         <select  id="efecto">
@@ -79,7 +79,7 @@
                         step="0.1"
                         min="0"
                         max="10"
-                        value="0"
+                        value="1"
                         
 
                         >
@@ -91,7 +91,7 @@
                         step="0.1"
                         min="0"
                         max="1"
-                        value="0"
+                        value="1"
 
                         >
                     </div>
@@ -99,10 +99,10 @@
                         <label for="contraste">Contraste</label>
                         <input type="range" 
                         id="contraste" 
-                        step="1%"
-                        min="100%"
-                        max="1000%"
-                        value="0"
+                        step="1"
+                        min="100"
+                        max="1000"
+                        value="100"
 
                         >
 
@@ -112,8 +112,8 @@
                         <input type="range" 
                         id="desefonque" 
                         step="0.1"
-                        min="0px"
-                        max="10px"
+                        min="0"
+                        max="10"
                         value="0">
                         
                     </div>
@@ -121,9 +121,9 @@
                         <label for="escalaDeGrises">Escala de grises</label>
                         <input type="range" 
                         id="escalaDeGrises" 
-                        step="1%"
-                        min="0%"
-                        max="100%"
+                        step="1"
+                        min="0"
+                        max="100"
                         value="0"
 
                         >
@@ -132,9 +132,9 @@
                         <label for="sepia">Sepia</label>
                         <input type="range" 
                         id="sepia" 
-                        step="1%"
-                        min="0%"
-                        max="100%"
+                        step="1"
+                        min="0"
+                        max="100"
                         value="0"
 
                         >
@@ -143,9 +143,9 @@
                         <label for="hue">Hue</label>
                         <input type="range" 
                         id="hue" 
-                        step="1deg"
-                        min="0deg"
-                        max="359deg"
+                        step="1"
+                        min="0"
+                        max="359"
                         value="0"
 
                         >
@@ -154,10 +154,10 @@
                         <label for="saturado">Saturado</label>
                         <input type="range" 
                         id="saturado" 
-                        step="10%"
-                        min="100%"
-                        max="1000%"
-                        value="0"
+                        step="10"
+                        min="100"
+                        max="1000"
+                        value="100"
 
                         >
                     </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox">
-                     <label >sin texto superior</label>
+                     <label class="label_ckeckbox" >sin texto superior</label>
                 </div>
                 <div class="text-botton">
                     <label for="botton-text">Inferior</label>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox1">
-                     <label >sin texto inferior</label>
+                     <label class="label_ckeckbox" >sin texto inferior</label>
                 </div>
                 <h2>Fuentes</h2>
                 <select id="text-efecto" >
@@ -213,8 +213,8 @@
                 <div class="input-number">
                     <input type="number"  min="12" value="40" id="input-number">
                     <button id="textoCentro"><img src="imagen/icons8-justificar-16.png" alt="Icono de una hoja con el texto en el centro"></button>
-                    <button id="textoDerecha"><img src="imagen/icons8-alinear-a-la-derecha-16.png" alt="Icono de una hoja con el texto hacia a la derecha"></button>
-                    <button id="textoIzquierda"><img src="imagen/icons8-alinear-a-la-izquierda-16.png" alt="Icono de una hoja con el texto hacia a la izquierda"></button>
+                    <button id="textoDerecha"><img src="imagen/icons8-alinear-a-la-izquierda-16.png"" alt="Icono de una hoja con el texto hacia a la derecha"></button>
+                    <button id="textoIzquierda"><img src="imagen/icons8-alinear-a-la-derecha-16.png" alt="Icono de una hoja con el texto hacia a la izquierda"></button>
                 </div>
                 <div class="text-color-fondo">
                     <label for="text-color-color">Color</label>
@@ -225,6 +225,10 @@
                     <label for="text-fondo-fondo">Fondo</label>
                     <input type="color" name="text-fondo-fondo" id="text-fondo-fondo">
                     <span>#FFFFFF</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox2" >
+                     <label class="label_ckeckbox" >Fondo transparente</label>
                 </div>
                 <h2>Contorno</h2>
 

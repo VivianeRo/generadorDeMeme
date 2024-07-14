@@ -62,26 +62,28 @@ main {
     font-family: "Playwrite NG Modern", cursive;
     background-color: var(--header-3);
     gap: 30px;
+    padding-top: 100px;
 }
 #descargar {
     background-color:#2e7d32;
     border: none;
     padding: 10px;
 }
+.headerBoton {
+    background-image: url(`${elegirImagen}`);
+    background-color:transparent;
+    background-blend-mode: normal;
+}
 
 #container {
     display: block;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    min-height: 300px;
     background-color:  var(--letra);
     border:  1px solid #00000012;
-    margin:auto;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
 
 }
 #container-img {
@@ -93,6 +95,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #container-img img { 
@@ -129,8 +132,9 @@ h2 {
 }
 
 p {
-    color: #000000;
-    font-size: 16px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
 }
 #imagen {
    margin-right: 10px; 
@@ -179,12 +183,12 @@ p {
     }
 
 .aside-imagen-url p {
-    color: var(--border-negro);
+    color: var(--letra-2);
 }
 .aside-imagen-url input {
     background-color: var( --aside-1);
     height: 20px;
-    color: var(--border-negro) ;
+    color: var(--letra-2) ;
     border: 1px solid  var(--letra-2);
 }
 
@@ -268,6 +272,11 @@ select {
 }
 label {
     color:  var(--letra-2);
+    
+}
+.label_ckeckbox {
+    color:  var(--letra-2);
+    font-size: 10px;
 }
 .aside-imagen-filtros-sepia {
     display: flex;
@@ -338,6 +347,10 @@ aside-texto h2 {
     padding-top: 10px;
 }
 .checkbox1 {
+    padding-left: 10px;
+    text-align: left;
+}
+.checkbox2 {
     padding-left: 10px;
     text-align: left;
 }
@@ -437,4 +450,5 @@ aside-texto h2 {
     display: flex;
     position: initial;
  }
+ 
 }

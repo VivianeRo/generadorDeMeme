@@ -102,7 +102,7 @@ const elegirImagen = document.getElementById("elegirImagen");
 /*console.log(elegirImagen)*/
  
 
-elegirImagen.addEventListener("click",function(){
+elegirImagen.addEventListener("input",function(){
     const elegirImagen1 = this.value
 
     imagenFoto.src = elegirImagen1

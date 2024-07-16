@@ -124,7 +124,7 @@ const label_fondo_color= document.getElementById("label-fondo-color")
 const fondo_color= document.getElementById("fondo-color")
 fondo_color.addEventListener("input" ,function(e){
     console.log(e.target.value)
-    fondo_color.style.backgroundImage =  "" })
+    imagen.style.backgroundColor = fondo_color.value })
 
 
     
@@ -285,7 +285,7 @@ const efecto = document.getElementById("efecto");
 efecto.addEventListener("input", function(e){
     console.log(e.target.value)
     const efecto_value = efecto.value;
-    imagenFoto.style.backgroundBlendMode = `${efecto_value}`})
+    imagen.style.backgroundBlendMode = efecto_value})
     
 
 /*boton modo oscuro */

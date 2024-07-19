@@ -69,11 +69,7 @@ main {
     border: none;
     padding: 10px;
 }
-.headerBoton {
-    background-image: url(`${elegirImagen}`);
-    background-color:transparent;
-    background-blend-mode: normal;
-}
+
 
 #container {
     display: block;
@@ -86,6 +82,8 @@ main {
     justify-content: center;
 
 }
+
+
 #container-img {
     width: 100%;
     height: auto;
@@ -101,7 +99,9 @@ main {
 #container-img img { 
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+	
+	
     
     }
     
@@ -131,7 +131,13 @@ h2 {
     text-align: left;
 }
 
-p {
+
+.text_superior {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+.text_inferior {
     color: black;
     font-size: 14px;
     text-align: center;

@@ -281,8 +281,8 @@ modoClaro.addEventListener("click",function(e){
 modoOscuro.addEventListener("click",function(){
     body.classList.add("buttonOscuro");
     body.classList.remove("buttonClaro");
-    modoClaro.classList.add("hidden")
-    modoOscuro.classList.remove("hidden")
+    modoClaro.classList.add("hidden") // modoClaro.classList.remove("hidden")
+    modoOscuro.classList.remove("hidden") // modoOscuro.classList.add("hidden")
 });
 
  /*CHECKEBOX DE SACAR EL TEXTO SUPERIOR Y INFERIOR */
